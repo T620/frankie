@@ -1,0 +1,25 @@
+// polaroids
+@import 'base';
+
+.polaroid{
+    margin: 2% 5%;
+    background: #f0f0f0;
+    box-shadow: $box-shadow-base;
+    transition: $transition;
+    width: auto;
+    height: auto;
+    padding: 2% 1.25%;
+
+    & .picture img{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+
+    }
+    & .notes{
+        margin-top: 2%;
+        padding: 1% 5%;
+        text-align: center;
+    }
+}

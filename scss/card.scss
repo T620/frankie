@@ -1,0 +1,46 @@
+@import 'base';
+
+.card{
+    margin: 2% 5%;
+    background: #f0f0f0;
+    box-shadow: $box-shadow-base;
+    transition: $transition;
+    width: auto;
+    height: auto;
+    & img{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+    &:hover{
+        box-shadow: $box-shadow-hover;
+    }
+}
+
+
+.card-auto{
+    width: 100%;
+}
+
+.card-head{
+    padding: .5%;
+    text-align: center;
+}
+.card-body{
+    padding: 2% 5%;
+}
+.card-body-img{
+    padding: 0;
+}
+.card-footer{
+    padding: .5%;
+}
+
+.no-borders{
+    border: 0 !important;
+}
+
+.card-row{
+    display: flex;
+}
