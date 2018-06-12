@@ -1,34 +1,69 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="simple-grid.css" />
+    <link rel="stylesheet" href="css/simple-grid.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/polaroid.css">
 </head>
  <div class="container">
-      <div class="row">
-        <div class="col-3">
-          This content will take up 3/12 (or 1/4) of the container
+    <h1>Card</h1>
+    <p> Cards can be displayed in a group like so and uses <code>display: flex;</code> to create a uniform look. Can be altered and adjusted easily. Follow's Bootstraps way of setting width manually (<code>width: 18rem;</code>)</p>
+  </div>
+    <div class="card-row">
+        <div class="card" style="width: 18rem;">
+            <div class="card-head">
+                <h4>Card Title</h4>
+            </div>
+            <div class="card-body">
+                <p><!-- start slipsum code -->
+                    Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.
+
+                <!-- end slipsum code --></p>
+            </div>
+            <div class="card-footer">
+                <i>Small footer</i>
+            </div>
         </div>
-        <div class="col-3">
-          This content will take up 3/12 (or 1/4) of the container
+
+        <div class="card" style="width: 18rem;">
+            <div class="card-head">
+                <h4>Card Title</h4>
+            </div>
+            <div class="card-body-img">
+                <img src="https://picsum.photos/300/300?random">
+            </div>
+            <div class="card-footer">
+                <i>Small footer</i>
+            </div>
         </div>
-        <div class="col-12">
-          This content will take up 12/12 (or all) of the container
+
+        <div class="card" style="width: 18rem;">
+            <div class="card-body-img">
+                <img src="https://picsum.photos/300/300?random">
+            </div>
+            <div class="card-body">
+                <p>Mix 'n' Match
+                    Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. </p>
+            </div>
         </div>
-      </div>
+    </div> <!--/row-->
     <div class="row">
         <div class="col-12">
-            <h1>Card</h1>s
-            <div class="card">
-                <div class="card-head">
-                    <h4>Card Title</h4>
+            <h2>Polaroid</h2>
+            <p> Used as an alternative to image-based cards. Does not have any transitions or hover effects. Uses picture class instead of img as a parent, since it's a picture, not an img/icon</p>
+
+            <div class="polaroid" style="width: 18rem;">
+                    <!-- shake it like a -->
+                <div class="picture">
+                    <img src="https://picsum.photos/800/1000?random">
                 </div>
-                <div class="card-body">
-                    <p>Card body</p>
-                </div>
-                <div class="card-footer">
-                    <i>Small footer</i>
+                <div class="notes">
+                    <i>Some notes here</i>
                 </div>
             </div>
         </div>
     </div>
-</div>
+
+
+</div> <!--/container-->
 </html>
