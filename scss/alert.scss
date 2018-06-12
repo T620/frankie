@@ -1,0 +1,16 @@
+// alerts
+@import 'base';
+
+.alert{
+    background: #1d1d1d;
+    color: #f0f0f0;
+    padding: .5em 1.5em;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: .3em;
+    box-shadow: $box-shadow-base;
+    transition: $transition;
+    text-align: center;
+
+    margin: 1% 2% 2% 0;
+}

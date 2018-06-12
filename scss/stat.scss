@@ -1,0 +1,72 @@
+// stats
+@import 'base';
+
+.stat{
+    .stat-round{
+        border-radius: 100%;
+        font-size: 2em;
+        text-align: center;
+        width: 4.5em;
+        height: 4.5em;
+        background: #c31432; /* Old browsers */
+        background: -moz-linear-gradient(-45deg, #c31432 0%, #240b36 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, #c31432 0%,#240b36 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, #c31432 0%,#240b36 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        color: #fefefe;
+        border: 3px solid #fff;
+        box-shadow: $box-shadow-base;
+        margin: 0 auto;
+        transition: $transition;
+
+        & span, .title{
+            position: relative;
+            font-weight: 200;
+        }
+        & .title{
+            font-size: 2em;
+            top: -25%;
+        }
+        & span{
+            font-size: 1em;
+            top: -100px;
+        }
+        & i.sub{
+            display: block;
+            margin: 2% auto;
+            text-align: center;
+        }
+    }
+
+    .stat-tile{
+        font-size: 2em;
+        text-align: center;
+        width: 4.5em;
+        height: 4.5em;
+        background: #c31432; /* Old browsers */
+        background: -moz-linear-gradient(-45deg, #c31432 0%, #240b36 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, #c31432 0%,#240b36 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, #c31432 0%,#240b36 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        color: #fefefe;
+        border: 3px solid #fff;
+        box-shadow: $box-shadow-base;
+        margin: 0 auto;
+        transition: $transition;
+    }
+    & span, .title{
+        position: relative;
+        font-weight: 200;
+    }
+    & .title{
+        font-size: 2em;
+        top: -25%;
+    }
+    & span{
+        font-size: 1em;
+        top: -100px;
+    }
+    & i.sub{
+        display: block;
+        margin: 2% auto;
+        text-align: center;
+    }
+}
