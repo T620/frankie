@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <head>
+    <title>Frankie: A collection of the best UI components on the web today.</title>
     <link rel="stylesheet" href="css/simple-grid.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/card.css">
     <link rel="stylesheet" href="css/polaroid.css">
+    <link rel="stylesheet" href="css/toast.css">
+    <link rel="stylesheet" href="css/alert.css">
+    <link rel="stylesheet" href="css/stat.css">
+    <link rel="stylesheet" href="css/remodal.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
+
 </head>
- <div class="container">
-    <h1>Card</h1>
+<h1>Information &amp; Graphic Based UI Components</h1>
+ <div class="container remodal-bg">
+    <h2>Card</h2>
     <p> Cards can be displayed in a group like so and uses <code>display: flex;</code> to create a uniform look. Can be altered and adjusted easily. Follow's Bootstraps way of setting width manually (<code>width: 18rem;</code>)</p>
-  </div>
     <div class="card-row">
         <div class="card" style="width: 18rem;">
             <div class="card-head">
@@ -63,7 +70,93 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-3">
+        </div>
+        <div class="col-6">
+            <h2>Toasts</h2>
+            <p>I honestly hate the fact that these little notifications are called 'toasts', so I'm renaming them to something <i> much less</i> cringey in the future</p>
+            <p>Used to display notifications to the user, usually in real time. It's in the bottom right corner. They overlay content, similar to ctas.
+            Eventually, I'll add a colour system so you can do things like .danger, and .success for red and green toasts, respectively.
+            </p>
+
+            <div class="toast">
+                <p class="text-info">Item added to basket! </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+        </div>
+        <div class="col-6">
+            <h2>Alerts</h2>
+            <p>Next up, we have alerts. These are <i>big toasts</i>, meant for <i>big threats or successess</i>. They float and are persistent until the user dismisses them.</p>
+            Again, eventually I'll add a colour system so you can do things like .danger, and .success for red and green toasts, respectively.
+            </p>
+
+            <div class="alert">
+                <p class="text-info">Check yourself before you wreck yourself.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+        </div>
+        <div class="col-10">
+            <h2>Stats</h2>
+            <p>Placeholder for information like statstics, scores, ratings and so on. At a glance information. Comes in circular and square form.</p>
+            <div class="stat">
+                <div class="stat-round">
+                    <p class="title">60</p>
+                    <span>%</span>
+                </div>
+                <i class="sub">Rating</i>
+            </div>
+            <div class="stat">
+                <div class="stat-tile">
+                    <p class="title">60</p>
+                    <span>%</span>
+                </div>
+                <i class="sub">Rating</i>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+        </div>
+        <div class="col-6">
+            <h2>Modals</h2>
+            <p>jQuery Modal "Remodal", thanks to VodkaBears. Add <code>.remodal-bg</code> to <code>body</code> or <code>.container</code> or whatever for bg effects. Add <code>#modal</code> to your trigger (href).</p>
+            </p>
+
+            <a href="#modal">Trigger Modal</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+        </div>
+        <div class="col-6">
+            <h2>Tooltips</h2>
+            <p>Tooltips reveal additional content on <code>:hover</code>, Only top-popovers are currently supported</p>
+            <p data-toggle="tooltip" data-placement="top" title="Tooltip on top"><!-- start slipsum code -->
+                Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it?
+                <!-- end slipsum code -->
+            </p>
+        </div>
+    </div>
 
 
+    <div class="remodal" data-remodal-id="modal">
+        <button data-remodal-action="close" class="remodal-close"></button>
+        <h1>Remodal</h1>
+        <p>
+            Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.
+        </p>
+        <br>
+        <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
+        <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+    </div>
 </div> <!--/container-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/remodal.js"></script>
 </html>
