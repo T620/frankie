@@ -1,0 +1,67 @@
+// btns
+@import 'base';
+
+.btn{
+    border-radius: 25px;
+    width: auto;
+    padding: 1em 2.7em;
+    background: #8e44ad;
+    color: #fefefe;
+    box-shadow: $box-shadow-base;
+    transition: $transition;
+    text-decoration: none;
+    margin: .5em auto;
+}
+.btn:hover{
+    box-shadow: $box-shadow-hover;
+    transition: $transition;
+    background: #9b59b6;
+    text-shadow: $text-shadow-btn;
+}
+
+
+.btn-outline{
+    background: rgba(0,0,0,0);
+    border: 2.5px solid #8e44ad;
+    color: #1d1d1d;
+}
+.btn-outline:hover{
+    background: #8e44ad;
+    color: #fefefe;
+}
+
+.btn-info{
+    background: #2c3e50;
+}
+.btn-info:hover{
+    background: #34495e;
+}
+
+.fab{
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background: #c31432; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #c31432 0%, #240b36 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #c31432 0%,#240b36 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #c31432 0%,#240b36 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 800;
+    margin: 4%;
+    border-radius: 100%;
+    line-height: 65px;
+    font-size: 50px;
+    border: 3px solid #fefefe;
+    box-shadow: $box-shadow-base;
+    transition: $transition;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fefefe;
+    font-weight: 300;
+}
+.fab:hover{
+    box-shadow: $box-shadow-hover;
+    transition: $transition;
+}
