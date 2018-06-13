@@ -51,8 +51,8 @@
     z-index: 800;
     margin: 4%;
     border-radius: 100%;
-    line-height: 65px;
-    font-size: 50px;
+    line-height: 70px;
+    font-size: 4.5em;
     border: 3px solid #fefefe;
     box-shadow: $box-shadow-base;
     transition: $transition;
@@ -63,5 +63,20 @@
 }
 .fab:hover{
     box-shadow: $box-shadow-hover;
+    transition: $transition;
+    color: #fefefe;
+    & .icon{
+        color: #fefefe;
+    }
+}
+
+a{
+    color: #1abc9c;
+    transition: $transition;
+    text-decoration: none;
+    font-weight: 700;
+}
+a :hover{
+    color: #27ae60;
     transition: $transition;
 }
