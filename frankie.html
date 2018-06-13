@@ -17,7 +17,7 @@
     <h2>Card</h2>
     <p> Cards can be displayed in a group like so and uses <code>display: flex;</code> to create a uniform look. Can be altered and adjusted easily. Follow's Bootstraps way of setting width manually (<code>width: 18rem;</code>)</p>
     <div class="card-row">
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 19rem;">
             <div class="card-head">
                 <h4>Card Title</h4>
             </div>
@@ -31,7 +31,7 @@
             </div>
         </div>
 
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 19rem;">
             <div class="card-head">
                 <h4>Card Title</h4>
             </div>
@@ -43,7 +43,7 @@
             </div>
         </div>
 
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 19rem;">
             <div class="card-body-img">
                 <img src="https://picsum.photos/300/300?random">
             </div>
@@ -58,7 +58,7 @@
             <h2>Polaroid</h2>
             <p> Used as an alternative to image-based cards. Does not have any transitions or hover effects. Uses picture class instead of img as a parent, since it's a picture, not an img/icon</p>
 
-            <div class="polaroid" style="width: 18rem;">
+            <div class="polaroid" style="width: 19rem;">
                     <!-- shake it like a -->
                 <div class="picture">
                     <img src="https://picsum.photos/800/1000?random">
@@ -78,6 +78,7 @@
             <p>Used to display notifications to the user, usually in real time. It's in the bottom right corner. They overlay content, similar to ctas.
             Eventually, I'll add a colour system so you can do things like .danger, and .success for red and green toasts, respectively.
             </p>
+            <a href="#0"data-trigger="toast" class="btn btn-info">Trigger</a>
 
             <div class="toast">
                 <p class="text-info">Item added to basket! </p>
@@ -103,20 +104,13 @@
         </div>
         <div class="col-11">
             <h2>Stats</h2>
-            <p>Placeholder for information like statstics, scores, ratings and so on. At a glance information. Comes in circular and square form.</p>
+            <p>Placeholder for information like statstics, scores, ratings and so on. At a glance information. Comes in circular form.</p>
             <div class="stat">
                 <div class="stat-round">
                     <p class="title">60</p>
                     <span>%</span>
                 </div>
-                <i class="sub">Rating</i>
-            </div>
-            <div class="stat">
-                <div class="stat-tile">
-                    <p class="title">60</p>
-                    <span>%</span>
-                </div>
-                <i class="sub">Rating</i>
+                <i class="sub">Label</i>
             </div>
         </div>
     </div>
@@ -147,6 +141,14 @@
 <div class="container">
     <h1>Interaction-Based</h1>
     <p>Buttons, links, search tools and so on </p>
+
+    <div class="row">
+        <h3>Hyperlinks</h3>
+        <p>Elegant styling, simple enough. Perfectly usable for everyone.</p>
+
+        <p>Do you see any <a href="#0">Teletubbies</a> in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it?
+        </p>
+    </div>
 
     <div class="row">
         <h3>Buttons</h3>
