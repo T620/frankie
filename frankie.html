@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/stat.css">
     <link rel="stylesheet" href="css/remodal.css">
     <link rel="stylesheet" href="css/remodal-default-theme.css">
-
+    <link rel="stylesheet" href="css/button.css">
 </head>
 <h1>Information &amp; Graphic Based UI Components</h1>
  <div class="container remodal-bg">
@@ -23,8 +23,7 @@
             </div>
             <div class="card-body">
                 <p><!-- start slipsum code -->
-                    Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.
-
+                    Well, the way they make shows is, they make one show. That show's called a pilot.
                 <!-- end slipsum code --></p>
             </div>
             <div class="card-footer">
@@ -50,7 +49,7 @@
             </div>
             <div class="card-body">
                 <p>Mix 'n' Match
-                    Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. </p>
+                    Well, the way they make shows is, they make one show. That show's called a pilot. </p>
             </div>
         </div>
     </div> <!--/row-->
@@ -71,9 +70,9 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-3">
+        <div class="col-1">
         </div>
-        <div class="col-6">
+        <div class="col-11">
             <h2>Toasts</h2>
             <p>I honestly hate the fact that these little notifications are called 'toasts', so I'm renaming them to something <i> much less</i> cringey in the future</p>
             <p>Used to display notifications to the user, usually in real time. It's in the bottom right corner. They overlay content, similar to ctas.
@@ -86,9 +85,9 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-3">
+        <div class="col-1">
         </div>
-        <div class="col-6">
+        <div class="col-11">
             <h2>Alerts</h2>
             <p>Next up, we have alerts. These are <i>big toasts</i>, meant for <i>big threats or successess</i>. They float and are persistent until the user dismisses them.</p>
             Again, eventually I'll add a colour system so you can do things like .danger, and .success for red and green toasts, respectively.
@@ -100,9 +99,9 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-2">
+        <div class="col-1">
         </div>
-        <div class="col-10">
+        <div class="col-11">
             <h2>Stats</h2>
             <p>Placeholder for information like statstics, scores, ratings and so on. At a glance information. Comes in circular and square form.</p>
             <div class="stat">
@@ -122,9 +121,9 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-3">
+        <div class="col-1">
         </div>
-        <div class="col-6">
+        <div class="col-11">
             <h2>Modals</h2>
             <p>jQuery Modal "Remodal", thanks to VodkaBears. Add <code>.remodal-bg</code> to <code>body</code> or <code>.container</code> or whatever for bg effects. Add <code>#modal</code> to your trigger (href).</p>
             </p>
@@ -133,17 +132,52 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-3">
+        <div class="col-1">
         </div>
-        <div class="col-6">
+        <div class="col-11">
             <h2>Tooltips</h2>
-            <p>Tooltips reveal additional content on <code>:hover</code>, Only top-popovers are currently supported</p>
+            <p>Tooltips reveal additional content on <code>:hover</code>.</p>
             <p data-toggle="tooltip" data-placement="top" title="Tooltip on top"><!-- start slipsum code -->
                 Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it?
                 <!-- end slipsum code -->
             </p>
         </div>
     </div>
+</div>
+<div class="container">
+    <h1>Interaction-Based</h1>
+    <p>Buttons, links, search tools and so on </p>
+
+    <div class="row">
+        <h3>Buttons</h3>
+        <p> So click-able!</p>
+
+        <div class="col-4">
+            <p>Base</p>
+            <a href="#0" class="btn btn-base">Solid</a>
+        </div>
+
+        <div class="col-4">
+            <p>Outline</p>
+            <a href="#0" class="btn btn-outline">Solid</a>
+        </div>
+
+        <div class="col-4">
+            <p>Colours</p>
+            <a href="#0" class="btn btn-info">.info</a>
+        </div>
+    </div>
+    <div class="row" id="fab">
+        <h4>Buttons: FAB</h4>
+        <p>Fabba-dabba-do! Used to draw the reader's attention to a particular action by floating over the bottom right corner of the view.</p>
+        <div class="col-12">
+            <a href="#fab" data-toggle="tooltip" data-placement="top" title="View source">
+                <div class="fab"><span class="icon"> &plus;</span> </div>
+            </a>
+        </div>
+    </div>
+
+</div>
 
 
     <div class="remodal" data-remodal-id="modal">
@@ -159,4 +193,5 @@
 </div> <!--/container-->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="js/remodal.js"></script>
+<script src="js/popper.js"></script>
 </html>
